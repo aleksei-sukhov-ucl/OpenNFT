@@ -6,7 +6,7 @@ from flask import request, jsonify, Response
 
 from Models.smartContract import SmartContract
 from OpenSeaAssets import OpenSeaAssets
-from app.celaryTasks import getAssets
+from app.celeryTasks import getAssets
 
 
 @app.route("/", methods=['GET', 'POST'])
