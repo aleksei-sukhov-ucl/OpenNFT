@@ -1,5 +1,6 @@
 from celery import Celery
 
+# In terminal put: celery -A app.celery worker --loglevel=info
 
 def make_celery(app):
     celery = Celery(
